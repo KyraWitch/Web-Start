@@ -40,10 +40,39 @@
 
         <article class="gal-con">
 
-            <a href="./images/p3.jpg"><img class="img-gal" src="images/p3.jpg" alt="char gal 1"></a>
+
+            <div class="thumb-con">
+                <img src="images/p3.jpg" class="img-gal" alt="char gal 1" onclick="openModal(this)">
+            </div>
+
+            <div class="thumb-con">
+                <img src="images/p4.jpg" class="img-gal" alt="char gal 2" onclick="openModal(this)">
+            </div>
+
+            <div class="thumb-con">
+                <img src="images/p5.jpg" class="img-gal" alt="char gal 3" onclick="openModal(this)">
+            </div>
+
+            <div class="thumb-con">
+                <img src="images/p6.jpg" class="img-gal" alt="char gal 4" onclick="openModal(this)">
+            </div>
+
+
+
+
+            <!-- <a href="./images/p3.jpg"><img class="img-gal" src="./images/p3.jpg" alt="char gal 1"></a>
             <a href="./images/p4.jpg"><img class="img-gal" src="images/p4.jpg" alt="char gal 2"></a>
             <a href="./images/p5.jpg"><img class="img-gal" src="images/p5.jpg" alt="char gal 3"></a>
-            <a href="./images/p6.jpg"><img class="img-gal" src="images/p6.jpg" alt="char gal 4"></a>
+            <a href="./images/p6.jpg"><img class="img-gal" src="images/p6.jpg" alt="char gal 4"></a> -->
+
+
+            <div id="modal1" class="modal" onclick="this.style.display='none'">
+                <span class="close">&times;</span>
+                <!-- full screen modal -->
+                <div class="modal-content">
+                    <img id="fullsize-img" alt="char">
+                </div>
+            </div>
 
         </article>
 
@@ -57,6 +86,14 @@
 
 </body>
 
-
+<script>
+    function openModal(item) {
+        const fullSizeImg = document.getElementById("fullsize-img");
+        console.log(item.src);
+        fullSizeImg.src = item.src;
+        console.log(fullSizeImg.src);
+        document.getElementById("modal1").style.display = "block";
+    }
+</script>
 
 </html>

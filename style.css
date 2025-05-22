@@ -1,272 +1,309 @@
-/* Common style testing */
-
-:root {
-    --back-reuse: yellow;
-}
-
-ul {
-    font-style: italic;
-    color: black;
-}
-
-
-/* char style */
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-/* OUTER CON */
-
-.outer-Container {
-    border: 3px solid black;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
-}
-
-header {
-    background-color: var(--back-reuse);
-    position: relative;
-}
-
-
-/* Picture of char */
-
-#logo-char {
-    max-width: 100px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-#logo-Title {
-    font-size: 100px;
-    text-align: center;
-    margin: 0;
-    font-family: 'Bebas Neue';
-    letter-spacing: 6px;
-}
-
-nav {
-    text-align: center;
-    background-color: white;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-nav ul li {
-    display: inline;
-    font-family: 'Bebas Neue';
-    font-size: 36px;
-    padding-right: 40px;
-}
-
-nav ul li:hover {
-    color: aquamarine;
-}
-
-a {
-    color: black;
-    text-decoration: inherit;
-}
-
-a:visited {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-
-/* Intro area */
-
-.ito-con {
-    background-color: coral;
-    overflow: auto;
-}
-
-.img-con {
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-.ito-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    border: 6px solid lavender;
-    box-sizing: border-box;
-}
-
-.ito-text {
-    float: left;
-    max-width: 600px;
-    margin: 0;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-
-/* Footer Area */
-
-footer {
-    background-color: var(--back-reuse);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-top: 2px solid black;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
-
-
-/* Gallery */
-
-.gal-con {
-    background-color: orange;
-    overflow: auto;
-}
-
-.img-gal {
-    width: 25%;
-    height: 200px;
-    float: left;
-    padding: 5px;
-    box-sizing: border-box;
-    outline: 5px solid black;
-    outline-offset: -10px;
-}
-
-
-/* About */
-
-.about-con {
-    background-color: var(--back-reuse);
-    overflow: auto;
-}
-
-.Img-dex {
-    width: 20%;
-    margin-left: 1%;
-}
-
-ul li {
-    display: inline;
-}
-
-.about-text ul li a {
-    font-size: xx-large;
-    font-style: italic;
-    color: crimson;
-    margin-left: 3%;
-    font-weight: bold;
-}
-
-.about-text {
-    background-color: white;
-    color: crimson;
-}
-
-h3 {
-    float: right;
-    max-width: 600px;
-    margin: 0;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-
-/*Dex*/
-
-.dex-entry-con {
-    background-color: salmon;
-    overflow: auto;
-}
-
-h4 {
-    float: left;
-    max-width: 40%;
-    padding: 1%;
-    outline: 3px solid black;
-    background-color: goldenrod;
-    max-height: 900px;
-    font-size: medium;
-    font-style: italic;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.dex-img {
-    margin-bottom: 10px;
-    float: right;
-    margin-right: 22%;
-    margin-left: 100%;
-    outline: 5px solid crimson;
-    box-sizing: border-box;
-    max-width: 480px;
-    max-height: 300px;
-}
-
-.stat-img {
-    max-width: 91.67%;
-    max-height: 400px;
-    float: right;
-    margin-right: 50px;
-    padding: 5px;
-    box-sizing: border-box;
-    outline: 6px solid firebrick;
-    outline-offset: -11px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    box-sizing: border-box;
-}
-
-.typesheet-img {
-    max-width: 50%;
-    margin-top: 15px;
-    float: right;
-    outline: 7px solid crimson;
-    margin-right: 45px;
-    box-sizing: border-box;
-}
-
-.evo-img {
-    max-height: 300px;
-    height: auto;
-    max-width: 600px;
-    padding: 5px;
-    box-sizing: border-box;
-    outline: 4px solid crimson;
-    outline-offset: -10px;
-    margin-top: 60px;
-    box-sizing: border-box;
-    margin-left: 68px;
-}
-
-
-/* Dex video */
-
-.dex-entry-con ul {
-    float: left;
-    background-color: crimson;
-    border: 1px solid black;
-    border-radius: 80%;
-    margin-left: 10%;
-    height: 120px;
-    width: 20%;
-    margin-bottom: 2px;
-    margin-top: 50px;
-    font-size: large;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    color: aliceblue;
-}
-
-.dex-entry-con ul li:hover {
-    color: violet;
-}
+    /* Common style testing */
+    
+     :root {
+        --back-reuse: yellow;
+    }
+    
+    ul {
+        font-style: italic;
+        color: black;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* char style */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    /* OUTER CON */
+    
+    .outer-Container {
+        border: 3px solid black;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+    }
+    
+    header {
+        background-color: var(--back-reuse);
+        position: relative;
+    }
+    /* Picture of char */
+    
+    #logo-char {
+        max-width: 100px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    @media screen and (max-width: 620px) {
+        #logo-char {
+            position: relative;
+            margin-left: 35%;
+        }
+    }
+    
+    #logo-Title {
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+        font-family: 'Bebas Neue';
+        letter-spacing: 6px;
+    }
+    
+    nav {
+        text-align: center;
+        background-color: white;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    nav ul li {
+        display: inline;
+        font-family: 'Bebas Neue';
+        font-size: 36px;
+        padding-right: 40px;
+    }
+    
+    nav ul li:hover {
+        color: aquamarine;
+    }
+    
+    a {
+        color: black;
+        text-decoration: inherit;
+    }
+    
+    a:visited {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    /* Intro area */
+    
+    .ito-con {
+        background-color: coral;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .img-con {
+        max-width: 600px;
+        margin: 0;
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    
+    .ito-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        border: 6px solid lavender;
+        box-sizing: border-box;
+    }
+    
+    .ito-text {
+        max-width: 600px;
+        margin: 0;
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    /* Footer Area */
+    
+    footer {
+        background-color: var(--back-reuse);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 2px solid black;
+    }
+    
+    footer p {
+        margin: 0;
+        text-align: center;
+    }
+    /* Gallery */
+    
+    .gal-con {
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .img-gal {
+        width: 300px;
+        height: 200px;
+        padding: 5px;
+        box-sizing: border-box;
+        outline: 5px solid black;
+        outline-offset: -10px;
+    }
+    /* Full screen img modal */
+    
+    .modal {
+        z-index: 1;
+        display: none;
+        padding-top: 10px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        position: absolute;
+        max-height: 100%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    
+    .close {
+        text-decoration: none;
+        float: right;
+        font-size: 60px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        padding-right: 3%;
+    }
+    
+    #fullsize-img {
+        max-height: 90vh;
+        width: auto;
+    }
+    /* About */
+    
+    .about-con {
+        background-color: var(--back-reuse);
+        overflow: auto;
+    }
+    
+    .Img-dex {
+        width: 20%;
+        margin-left: 1%;
+    }
+    
+    ul li {
+        display: inline;
+    }
+    
+    .about-text ul li a {
+        font-size: xx-large;
+        font-style: italic;
+        color: crimson;
+        margin-left: 3%;
+        font-weight: bold;
+    }
+    
+    .about-text {
+        background-color: white;
+        color: crimson;
+    }
+    
+    h3 {
+        float: right;
+        max-width: 600px;
+        margin: 0;
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    /*Dex*/
+    
+    .dex-entry-con {
+        background-color: salmon;
+        overflow: auto;
+    }
+    
+    h4 {
+        float: left;
+        max-width: 40%;
+        padding: 1%;
+        outline: 3px solid black;
+        background-color: goldenrod;
+        max-height: 900px;
+        font-size: medium;
+        font-style: italic;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    
+    .dex-img {
+        margin-bottom: 10px;
+        float: right;
+        margin-right: 22%;
+        margin-left: 100%;
+        outline: 5px solid crimson;
+        box-sizing: border-box;
+        max-width: 480px;
+        max-height: 300px;
+    }
+    
+    .stat-img {
+        max-width: 91.67%;
+        max-height: 400px;
+        float: right;
+        margin-right: 50px;
+        padding: 5px;
+        box-sizing: border-box;
+        outline: 6px solid firebrick;
+        outline-offset: -11px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    
+    .typesheet-img {
+        max-width: 50%;
+        margin-top: 15px;
+        float: right;
+        outline: 7px solid crimson;
+        margin-right: 45px;
+        box-sizing: border-box;
+    }
+    
+    .evo-img {
+        max-height: 300px;
+        height: auto;
+        max-width: 600px;
+        padding: 5px;
+        box-sizing: border-box;
+        outline: 4px solid crimson;
+        outline-offset: -10px;
+        margin-top: 60px;
+        box-sizing: border-box;
+        margin-left: 68px;
+    }
+    /* Dex video */
+    
+    .dex-entry-con ul {
+        float: left;
+        background-color: crimson;
+        border: 1px solid black;
+        border-radius: 80%;
+        margin-left: 10%;
+        height: 120px;
+        width: 20%;
+        margin-bottom: 2px;
+        margin-top: 50px;
+        font-size: large;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        color: aliceblue;
+    }
+    
+    .dex-entry-con ul li:hover {
+        color: violet;
+    }
